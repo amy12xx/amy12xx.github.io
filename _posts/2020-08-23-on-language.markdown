@@ -7,17 +7,17 @@ categories: NLP
 
 This post is a summary of the Introduction (chapter) to Statistical Natural Language Processing by Manning & Schütze.
 
-## “All Grammars Leak”
+### “All Grammars Leak”
 
 It is difficult, if not impossible to create an exact and complete characterization of a natural language. Language is constantly evolving to support its primary purpose of communication.
 
-## Empiricist and Rationalist Approaches
+### Empiricist and Rationalist Approaches
 
 A rationalist’s approach considers language learning as innate, one that we are born with. It is interested in this I-Language (or language of the mind). It is concerned with both a linguistic competence (knowledge of the language structure present in the mind of a native speaker), and linguistic performance in the world.
 
 Empiricist approaches focus on the language as it is occurs in the world.
 
-## Non categorical phenomena (of language)
+### Non categorical phenomena (of language)
 
 For the most part, language (constituents) can be placed into categories (for e.g. The belongs to DET (Determiner) part of speech class. But there are several cases where a word might belong to several different categories. Its usage over time may also change.
 
@@ -27,7 +27,7 @@ E.g.2. “kind of/sort of” were used mainly as prepositional phrases. X is a k
 
 Statistical NLP deals mostly with the categorical phenomena of language (driven by its most frequent occurrences/uses).
 
-## Probability & Ambiguity
+### Probability & Ambiguity
 
 Human cognition is probabilistic. We make decisions/inferences based on what information we have collectively about an event. Since language is an integral part of cognition, it must also be probabilistic.
 
@@ -35,7 +35,7 @@ Human cognition is probabilistic. We make decisions/inferences based on what inf
 
 Language is ambiguous. Using a reasonable grammar we will typically have multiple valid parses for a sentence (some parses are more likely than others, including those that are semantically invalid). A grammar will have to trade-off between coverage, and computational complexity (caused by an explosion of parses).
 
-## Zipf’s Law
+### Zipf’s Law
 
 Zipf’s law establishes a relationship between the frequency of a word in a corpus, and it’s rank.
 
@@ -55,7 +55,7 @@ This aligns with Zipf’s theory of the principle of least effort. Both speaker 
 
 Also, m ∝ sqrt(f), where m is # of meanings
 
-## Collocations, Concordances
+### Collocations, Concordances
 
 Collocation: A turn of phrase that has meaning or exists beyond its constituents.
 

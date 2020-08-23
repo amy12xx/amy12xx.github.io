@@ -17,7 +17,7 @@ A word on notation. I abuse notation slightly in the visualization, for making i
 [![Solving MDPs](https://amy12xx.github.io/images/solving_mdps.png)](https://amy12xx.github.io/images/solving_mdps.png)
 
 
-## Notation:
+### Notation:
 ![equ](https://latex.codecogs.com/gif.latex?G_t) : Full (Monte carlo) return
 
 ![equ](https://latex.codecogs.com/gif.latex?\lambda) : Discount factor
@@ -45,7 +45,7 @@ q(S, A, w) : Approx to action-value function, for S, A and weights vector w
 ![equ](https://latex.codecogs.com/gif.latex?r(\pi)) : Average return following policy ![equ](https://latex.codecogs.com/gif.latex?\pi)
 
 
-## References:
+### References:
 
 [1] Reinforcement Learning, An Introduction. R, Sutton and A. Barto. Second Edition, http://www.incompleteideas.net/book/the-book.html
 
@@ -54,7 +54,7 @@ q(S, A, w) : Approx to action-value function, for S, A and weights vector w
 [3] OpenAI Spinning Up, https://spinningup.openai.com/en/latest/index.html
 
 
-## Acknowledgements:
+### Acknowledgements:
 
 - Graphviz Library https://graphviz.org/doc/info/lang.html 
 - Graphviz Templates by C, Eyssette https://github.com/eyssette/graphviz-templates
