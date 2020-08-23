@@ -5,6 +5,10 @@ date:   2019-08-09 20:05:00 +0530
 categories: NLP
 ---
 
+> A summary of the Introduction (chapter) to Statistical Natural Language Processing by Manning & Schütze.
+
+<!--more-->
+
 This post is a summary of the Introduction (chapter) to Statistical Natural Language Processing by Manning & Schütze.
 
 ### “All Grammars Leak”
