@@ -1,1 +1,11 @@
+title: Amanda Dsouza
+email: dsouza.amanda@gmail.com
+description: >
+  Data Science (NLP) lead @ fractal.ai. Interests in ML, NLP, RL, Open Source, Python. Current OMSCS student. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://amy12xx.github.io" # the base hostname & protocol for your site
+github_username:  amy12xx
+twitter_username: amanda_dsouza
+linkedin_username: amanda-dsouza-a2425137
+
 theme: jekyll-theme-minimal

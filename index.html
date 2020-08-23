@@ -30,6 +30,8 @@
       <header>
         <h1>Amanda Dsouza</h1>
 
+        <img src="{{ site.baseurl }}/assets/me.png" class="img-responsive img-circle center-block" alt="Photo of me">
+
         <p>Data Science (NLP) lead @ fractal.ai. Interests in ML, NLP, RL, Open Source, Python. Current OMSCS student.</p>
         
         <a href="http://twitter.com/amanda_dsouza" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a><br/>
@@ -40,43 +42,35 @@
       </header>
       <section>
 
-<h2 id="welcome-to-github-pages">Notes on Machine Learning, NLP, and RL</h2>
+        <h2 id="welcome-to-github-pages">Notes on Machine Learning, NLP, and RL</h2>
 
-<h3 id="markdown">On Language</h3>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
 
-<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
+            {{ content }}
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax highlighted code block
+            <ul class="timeline list-unstyled">
+              {% for post in site.posts %}
+                <li class="timeline--entry clearfix">
+                  <a class="timeline--link" href="{{ post.url | relative_url }}">
+                    <span class="timeline--dot"></span>
+                    <time class="timeline--time" datetime="{{ post.date | date_to_xmlschema }}">
+                      {{ post.date | date: "%b %-d, %Y" }}
+                    </time>
+                    <h3 class="timeline--title">
+                      {{ post.title | escape }}
+                    </h3>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
 
-<span class="gh"># Header 1</span>
-<span class="gu">## Header 2</span>
-<span class="gu">### Header 3</span>
-<span class="p">
--</span> Bulleted
-<span class="p">-</span> List
-<span class="p">
-1.</span> Numbered
-<span class="p">2.</span> List
-
-<span class="gs">**Bold**</span> and _Italic_ and <span class="sb">`Code`</span> text
-
-<span class="p">[</span><span class="nv">Link</span><span class="p">](</span><span class="sx">url</span><span class="p">)</span> and !<span class="p">[</span><span class="nv">Image</span><span class="p">](</span><span class="sx">src</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>For more details see <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a>.</p>
-
-<h3 id="jekyll-themes">Jekyll Themes</h3>
-
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/amy12xx/amy12xx.github.io/settings">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
-
-<h3 id="support-or-contact">Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
+          </div>
+        </div>
 
       </section>
       <footer>
-        
+      
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
