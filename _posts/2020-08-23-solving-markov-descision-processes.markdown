@@ -5,7 +5,7 @@ date:   2020-08-23 22:22:00 +0530
 categories: RL
 ---
 
-# Solving MDPs using Planning and RL methods
+## Solving MDPs using Planning and RL methods
 
 A visualization of a survey of methods (planning and reinforcement learning) used to solve (sequential) decision problems constructed via Markov Decision Processes, meant mostly as a cheatsheet, to support the wonderful S&B textbook. I started to work on it, as a way of keeping up with all the loaded terms, and especially to differentiate between the various problem settings of episodic, continuous horizon, continuous states/actions etc. 
 
