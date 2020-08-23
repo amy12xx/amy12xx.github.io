@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "On Language"
-date:   2019-08-09 20:05:00
+date:   2019-08-09 20:05:00 +0530
 categories: NLP
 ---
 
@@ -39,12 +39,14 @@ Language is ambiguous. Using a reasonable grammar we will typically have multipl
 
 Zipf’s law establishes a relationship between the frequency of a word in a corpus, and it’s rank.
 
-```f ∝ 1/r
+```
+f ∝ 1/r
 ```
 
 or
 
-```f . x = k
+```
+f . x = k
 ```
 
 So, the 50th ranked work is 3 times more frequent than the 150th ranked word.
