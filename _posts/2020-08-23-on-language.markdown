@@ -53,7 +53,7 @@ or
 f . x = k
 ```
 
-So, the 50th ranked work is 3 times more frequent than the 150th ranked word.
+So, the 50th ranked word is 3 times more frequent than the 150th ranked word.
 
 This aligns with Zipf’s theory of the principle of least effort. Both speaker and reader want to minimize the effort of communication (by using a smaller vocabulary of common words)
 
