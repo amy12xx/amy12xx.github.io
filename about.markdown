@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Amanda Dsouza
 permalink: /about/
 ---
 
@@ -13,4 +13,4 @@ As a Lead Data Scientist, I have led the Text practice at Fractal (fractal.ai). 
 
 I am currently working on two tasks for Google's BIG-Bench project, to evaluate ambiguous news titles, also known as crash blossoms, and to evaluate less frequent types of pronoun resolution (pleonastic, event reference) using the ParCor corpus. I have also started working on a RL project related to Imitation Learning (very early stages).
 
-My resums is linked [here]["assets/Amanda Dsouza.pdf"]
+My resums is linked [here][_site/assets/Amanda_Dsouza.pdf]
