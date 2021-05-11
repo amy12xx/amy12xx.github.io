@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Amanda Dsouza
+title: About me
 permalink: /about/
 ---
 
