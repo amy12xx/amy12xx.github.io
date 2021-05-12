@@ -13,6 +13,6 @@ As a Lead Data Scientist, I led the Text practice at Fractal (fractal.ai). My fo
 
 I  am involved in open source projects (dirty_cat, scikit-learn, pandas) and an active member of data science communities (Data Umbrella, Machine Learning Tokyo, RL Discord, MLC: Open Collab). I have mentored at DS and Python sprints (Data Umbrella, Humble Data).
 
-I am currently working on two tasks for [Google's BIG-Bench](https://github.com/google/BIG-bench) project, to evaluate Large Language models on ambiguous news titles, also known as crash blossoms, and on less frequent types of pronoun resolution (pleonastic, event reference) using an existing corpus. I have also started working on a RL project related to Imitation Learning (very early stages).
+I am currently working on a task for [Google's BIG-Bench](https://github.com/google/BIG-bench) project, to evaluate Large Language models on ambiguous news titles, also known as crash blossoms. I have also started working on a RL project related to Imitation Learning (very early stages).
 
 My resume is linked [here](/assets/Amanda_Dsouza.pdf)
