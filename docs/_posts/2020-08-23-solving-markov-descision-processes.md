@@ -6,17 +6,17 @@ categories: RL
 permalink: planning-rl-mdp.html
 ---
 
-> A visualization of a survey of methods (planning and reinforcement learning) used to solve (sequential) decision problems constructed via Markov Decision Processes, meant mostly as a cheatsheet, to support the wonderful Sutton & Barto textbook.
+> A visualization of a survey of methods (planning and reinforcement learning) used to solve (sequential) decision problems constructed via Markov Decision Processes, meant mostly as a cheatsheet, to support the Sutton & Barto textbook.
 
 <!--more-->
 
 ## Solving MDPs using Planning and RL methods
 
-A visualization of a survey of methods (planning and reinforcement learning) used to solve (sequential) decision problems constructed via Markov Decision Processes, meant mostly as a cheatsheet, to support the wonderful S&B textbook. I started to work on it, as a way of keeping up with all the loaded terms, and especially to differentiate between the various problem settings of episodic, continuous horizon, continuous states/actions etc. 
+A visualization of a survey of methods (planning and reinforcement learning) used to solve (sequential) decision problems constructed via Markov Decision Processes, meant mostly as a cheatsheet, to support the Sutton & Barto textbook. I started to work on it, as a way of keeping up with all the loaded terms, and especially to differentiate between the various problem settings of episodic, continuous horizon, continuous states/actions etc. 
 
 I may add to this as I continue surveying the field, but will probably create new versions for specific other cases (since this one blew up).
 
-A word on notation. I abuse notation slightly in the visualization, for making it more consistent, and to deal with dot's symbol limitations. This notation is mostly consistent with the Sutton & Barto textbook.
+A word on notation. I abuse notation slightly in the visualization, to make it more consistent, and to deal with dot's symbol limitations. This notation is mostly consistent with the Sutton & Barto textbook.
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/solving_mdps.png" width=560></img>
