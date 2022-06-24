@@ -90,7 +90,7 @@ Results on dense reward tasks: Classic Control tasks (CartPole, Acrobot and Pend
 
 
 
-The problem of reward leakage can inadvertently occur even in more complex environments. However, it can be easily alleviated by modifying the environments to stop the reward leakage. For instance, the seals project provides fixed horizon versions of some Gym environments, by always returning ``done=False`` and ``info={}``. Model diagnoses (for instance, through tensorboard/W&B logs) and test cases are good places to catch anomalies, in general.
+The problem of reward leakage can inadvertently occur even in more complex environments. But it can be easily alleviated by modifying the environments to stop the reward leakage. For instance, the seals project provides fixed horizon versions of some Gym environments, by always returning ``done=False`` and ``info={}``. Model diagnoses (for instance, through tensorboard/W&B logs) and test cases are good places to catch anomalies, in general.
 
 
 
