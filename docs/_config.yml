@@ -1,1 +1,11 @@
-theme: jekyll-theme-minimal
+title: Amanda Dsouza
+email: dsouza.amanda@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal website
+url: "https://amy12xx.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: amanda_dsouza
+github_username:  amy12xx
+
+theme: minima
+plugins:
+  - jekyll-feed
