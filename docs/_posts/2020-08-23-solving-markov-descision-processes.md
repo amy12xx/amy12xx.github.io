@@ -16,14 +16,12 @@ A visualization of a survey of methods (planning and reinforcement learning) use
 
 I may add to this as I continue surveying the field, but will probably create new versions for specific other cases (since this one blew up).
 
-A word on notation. I abuse notation slightly in the visualization, for making it more consistent, and to deal with dot's symbol limitations (and my laziness to investigate further the issues I encountered using latex with dot). This notation is mostly consistent with the S&B textbook.
+A word on notation. I abuse notation slightly in the visualization, for making it more consistent, and to deal with dot's symbol limitations. This notation is mostly consistent with the Sutton & Barto textbook.
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/solving_mdps.png" width=560></img>
 </br>
 </p>
-
-[![Solving MDPs](https://amy12xx.github.io/img/solving_mdps.png)](https://amy12xx.github.io/img/solving_mdps.png)
 
 
 ### Notation:
