@@ -18,8 +18,10 @@ I may add to this as I continue surveying the field, but will probably create ne
 
 A word on notation. I abuse notation slightly in the visualization, to make it more consistent, and to deal with dot's symbol limitations. This notation is mostly consistent with the Sutton & Barto textbook.
 
+<p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/solving_mdps.png" width=560>
-
+</p>
+[![Solving MDPs]](https://amy12xx.github.io/img/solving_mdps.png)
 
 ### Notation:
 ![equ](https://latex.codecogs.com/gif.latex?G_t) : Full (Monte carlo) return
