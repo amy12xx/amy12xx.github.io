@@ -74,7 +74,7 @@ Mean Reward + 95% confidence levels on Minigrid, and Miniworld environments, usi
 In contrast, the Lava gap task has both positive and negative absorbing states. An agent must reach the goal state, while avoiding the lava. In this case, the agent loss, does not learn, since no single biased reward function allows it to terminate quickly while avoiding the lava states.
 
 <p align="center" style="font-size:8px;">
-<img src="https://amy12xx.github.io/img/reward_leakage/lava.jpg"></img>
+<img src="https://amy12xx.github.io/img/reward_leakage/lava.jpg">
 W&B sweeps on the Lava environment.
 </p>
 
