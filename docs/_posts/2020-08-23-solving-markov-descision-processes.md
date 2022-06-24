@@ -6,10 +6,6 @@ categories: RL
 permalink: planning-rl-mdp.html
 ---
 
-> A visualization of a survey of methods (planning and reinforcement learning) used to solve (sequential) decision problems constructed via Markov Decision Processes, meant mostly as a cheatsheet, to support the Sutton & Barto textbook.
-
-<!--more-->
-
 ## Solving MDPs using Planning and RL methods
 
 A visualization of a survey of methods (planning and reinforcement learning) used to solve (sequential) decision problems constructed via Markov Decision Processes, meant mostly as a cheatsheet, to support the Sutton & Barto textbook. I started to work on it, as a way of keeping up with all the loaded terms, and especially to differentiate between the various problem settings of episodic, continuous horizon, continuous states/actions etc. 
@@ -21,7 +17,7 @@ A word on notation. I abuse notation slightly in the visualization, to make it m
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/solving_mdps.png" width=560>
 </p>
-[Solving MDPs](https://amy12xx.github.io/img/solving_mdps.png)
+The full version is available [here](https://amy12xx.github.io/img/solving_mdps.png)
 
 
 ### Notation:
