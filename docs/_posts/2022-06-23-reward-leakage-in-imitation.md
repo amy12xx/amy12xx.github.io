@@ -110,7 +110,7 @@ The problem of reward leakage can inadvertently occur in even in more complex en
 If you use this post in your research, please consider citing as follows:
 
 ```
-@article{amanda2021rewardleakage,
+@article{amanda2022rewardleakage,
   title={Reward Leakage in Imitation Learning},
   author={Amanda Dsouza},
   year={2022}
