@@ -73,14 +73,14 @@ Theoretically, any constant (and unchanged during training) reward function, sho
 
 We conduct experiments using GAILfO as the baseline, and our pathological loss, which we refer to as "agent", since it only uses agent data in the loss computation. To test the sparse reward setting, we use the [Minigrid](https://github.com/Farama-Foundation/gym-minigrid) (minimalistic gridworlds), and [Miniworld](https://github.com/Farama-Foundation/gym-miniworld) (minimalistic 3D environment, similar to DM Lab) tasks. Some of these environment require the agent to simply reach the end state, while others require it to take some action, such as picking up a key, in order to achieve the goal of opening a door. We use pixel observations, with no action information, and the reward function ``log D(s,a)`` . We use stacked observations for Miniworld, since it is a more difficult environment than gridworld. As an example, an expert policy for the TMazeRight or TMazeLeft environments, on average, takes 60 timesteps to reach the goal at the end of a T shaped maze. In all these tasks, there are no negative absorbing states.
 
-Even though both methods have access to the leaked rewards, the "agent" loss can quickly learn the task, while GAILfO fails. This is likely due to its attempts at matching the expert trajectories, which interferes with the leaked reward signal.
+Even though both methods have access to the leaked rewards, the "agent" loss can quickly learn the task, while GAILfO fails. This is likely due GAILfO's attempts at matching the expert trajectories, which interferes with the leaked reward signal.
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/reward_leakage/minigrid and miniworld gail loss.jpg">
 Mean Reward + 95% confidence levels on Minigrid, and Miniworld environments, using pixel observations (egocentric observations in case of Miniworld), over 3 seeds.
 </p>
 
-While leaky rewards worked well in spare reward tasks with only positive absorbing states, they may be less sensitive to environments with both positive and negative absorbing states. For instance, the Lava gap gridworld task has both positive and negative absorbing states. An agent must reach the goal state, while avoiding the lava. In this case, the agent loss does not learn, since no single biased reward function allows it to terminate quickly while avoiding the lava states.
+While leaky rewards worked well in sparse reward tasks with only positive absorbing states, they may be less sensitive to environments with both positive and negative absorbing states. For instance, the Lava gap gridworld task has both positive and negative absorbing states. An agent must reach the goal state, while avoiding the lava. In this case, the agent loss does not learn, since no single biased reward function allows it to terminate quickly while avoiding the lava states.
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/reward_leakage/lava.jpg">
