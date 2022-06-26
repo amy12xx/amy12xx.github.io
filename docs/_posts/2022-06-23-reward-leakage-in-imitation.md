@@ -47,6 +47,7 @@ In this article, we demonstrate how a pathological reward function can learn eve
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/reward_leakage/gail.png" width=360></img>
+Generative Adversarial Imitation Learning, Ho and Ermon, 2016
 </br>
 </p>
 
