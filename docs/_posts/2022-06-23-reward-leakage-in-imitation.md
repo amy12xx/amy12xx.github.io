@@ -46,9 +46,8 @@ In this article, we demonstrate how a pathological reward function can learn eve
 ## Experiment Details
 
 <p align="center" style="font-size:8px;">
-<img src="https://amy12xx.github.io/img/reward_leakage/gail.png" width=360></img>
+<img src="https://amy12xx.github.io/img/reward_leakage/gail.png" width=360>
 Generative Adversarial Imitation Learning, Ho and Ermon, 2016
-</br>
 </p>
 
 GAIL uses adversarial learning to jointly train a discriminator and generator on a state-action occupancy matching objective. The discriminator loss, is similar to the GAN discriminator loss, optimizing a dual objective; i.e. increasing the cost of non-expert demonstrations, while decreasing the cost of expert demonstrations.
