@@ -2,7 +2,7 @@
 layout: post
 title:  "Reward Leakage in Imitation Learning"
 date:   2022-06-24 15:32:00 -0700
-categories: RL
+categories: Reinforcement Learning, Imitation Learning
 permalink: reward-leakage.html
 ---
 
