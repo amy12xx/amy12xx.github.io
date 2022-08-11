@@ -96,30 +96,57 @@ If you use this post in your research, please consider citing as follows:
 ```
 ## References
 [[1] Caitlin R. Bowman and Dagmar Zeithamova. Abstract Memory Representations in the Ventromedial Prefrontal Cortex and Hippocampus Support Concept Generalization](https://www.jneurosci.org/content/38/10/2605.abstract)
+
 [[2] Edwin M. Robertson. Memory instability as a gateway to generalization](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2004633)
+
 [[3] Kurt A. Thoroughman and Jordan A. Taylor. Rapid Reshaping of Human Motor Generalization](https://www.jneurosci.org/content/25/39/8948.short)
+
 [[4] L G. Valiant. A Theory of the Learnable](http://web.mit.edu/6.435/www/Valiant84.pdf)
+
 [[5] Kenji Kawaguchi, Leslie Pack Kaelbling, Yoshua Bengio. Generalization in Deep Learning](https://arxiv.org/abs/1710.05468)
+
 [[6]]
+
 [[7] Robert E. Schapire. The Boosting Approach to Machine Learning: An Overview](https://link.springer.com/chapter/10.1007/978-0-387-21579-2_9)
+
 [[8] Scott Reed et al. A Generalist Agent](https://arxiv.org/abs/2205.06175)
+
 [[9] Rich Caruana. Multitask Learning](https://link.springer.com/article/10.1023/A:1007379606734)
+
 [[10] Robert Kirk et al. A Survey of Generalisation in Deep Reinforcement Learning](https://arxiv.org/abs/2111.09794)
+
 [[11] Chiyuan Zhang et al. A Study on Overfitting in Deep Reinforcement Learning](https://arxiv.org/abs/1804.06893)
+
 [[12] Charles Packer et al. Assessing Generalization in Deep Reinforcement Learning](https://arxiv.org/abs/1810.12282)
+
 [[13] Alex Nichol et al. Gotta Learn Fast: A New Benchmark for Generalization in RL](https://arxiv.org/abs/1804.03720).
+
 [[14] Karl Cobbe et al. Leveraging Procedural Generation to Benchmark Reinforcement Learning](https://arxiv.org/abs/1912.01588)
+
 [[15] Austin Stone et al. The Distracting Control Suite -- A Challenging Benchmark for Reinforcement Learning from Pixels](https://arxiv.org/abs/2101.02722)
+
 [[16] Edward P. Kardas. Generalization and Peak Shift](http://peace.saumag.edu/faculty/kardas/Images/Web%20Images/Lecture/DiscPeak.html)
+
 [[17] Agnes Norbury, Trevor W Robbins, Ben Seymour. Value generalization in human avoidance learning](https://elifesciences.org/articles/34779)
+
 [[18] P Ivan Pavlov. Conditioned reflexes: An investigation of the physiological activity of the cerebral cortex](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4116985/)
+
 [[19] Norman Guttman and Harry I. Kalish. Discriminability and stimulus generalization](https://psycnet.apa.org/record/1956-06725-001)
+
 [[20] Roger N. Shepard. Toward a Universal Law of Generalization for Psychological Science](https://www.science.org/doi/10.1126/science.3629243)
+
 [[21] J. B. Kruskal. Nonmetric multidimensional scaling: A numerical method](https://link.springer.com/article/10.1007/BF02289694)
+
 [[22] Ken Cheng. Shepard's Universal Law Supported by Honeybees in Spatial Generalization](https://journals.sagepub.com/doi/10.1111/1467-9280.00278)
+
 [[23] Greg Brockman et al. OpenAI Gym](https://arxiv.org/abs/1606.01540)
+
 [[24] Chevalier-Boisvert et al. Minimalistic Gridworld Environment for OpenAI Gym](https://github.com/Farama-Foundation/gym-minigrid)
+
 [[25] Maxime Chevalier-Boisvert. MiniWorld: Minimalistic 3D Environment for RL & Robotics Research](https://github.com/Farama-Foundation/gym-miniworld)
+
 [[26] Nick Chater and Paul M. B. Vitanyi. The generalized universal law of generalization](https://www.sciencedirect.com/science/article/abs/pii/S0022249603000130)
+
 [[27] Chris R. Sims. Efficient coding explains the universal law of generalization in human perception](https://www.science.org/doi/10.1126/science.aaq1118)
+
 [[28] Steven A. Frank. Measurement invariance explains the universal law of generalization for psychological perception](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6166795/)
