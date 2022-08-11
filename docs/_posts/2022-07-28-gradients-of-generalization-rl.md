@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Examining Gradients of Generalization in RL"
-date:   2022-07-28 12:09:00 -0700
+date:   2022-08-10 17:28:00 -0700
 categories: Reinforcement Learning, Psychology, Cognitive Science
 permalink: generalization-gradients.html
 ---
