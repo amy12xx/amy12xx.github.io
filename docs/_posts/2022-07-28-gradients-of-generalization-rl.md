@@ -25,7 +25,7 @@ We start by briefly reviewing some of the early work in classic and operant cond
 <img src="https://amy12xx.github.io/img/theory_of_gen/universal_law.png" width=360>
 </p>
 <p align="center" style="font-size:8px;">
-12 Gradients of Generalization following exponential decay curves, Roger Shepard, 1987
+12 Gradients of Generalization following exponential decay curves, Roger Shepard, 1987 (Source: [20])
 </p>
 
 In 1987, following this work, Roger Shepard showed that there exists a universal law of generalization [[20]](#references), which is the focus of these experiments. According to the law, the probability to which a learnt response to a specific stimulus generalizes to another different stimulus depends on the "distance" between the stimuli and follows an exponential decay with this distance. Importantly, this distance measure is not in physical space, but one in psychological space.
