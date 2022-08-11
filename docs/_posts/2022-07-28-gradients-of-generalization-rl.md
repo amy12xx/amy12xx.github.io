@@ -61,7 +61,7 @@ Degree of Generalization with latent distance on Hue and Saturation in MiniGrid 
 In experiments involving hue and saturation, the degree of generalization to latent distance exhibits a stretched exponential curve. (A stretched exponential uses a fractional power law in the exponential function). This implies that to some extent an agent will generalize to varying stimuli, before sharply dropping off. Both hue and saturation can be considered to be spurious correlation features, that are irrelevant to the task. They are also independent along the spectrum they are varied over. For instance, having a red or green box as the object to pick up should not render the problem more or less difficult. As Shepard points out, for stimuli such as color, the generalization is symmetric, since they do not possess any preferred axes in their psychological space (since the dimenions do not correspond to real world independent attributes). However, I am not sure if this claim holds for artificial agents. Regardless, in the language of Psychology, these stimuli can be considered as "neutral" stimuli, which do not affect the behavior of the conditioned stimulus. It appears that this is an important distinction to recover the exponential decay in RL agents. 
 
 <p align="center" style="font-size:8px;">
-<img src="https://amy12xx.github.io/img/theory_of_gen/combined-nonneutral-se.png" width=550>
+<img src="https://amy12xx.github.io/img/theory_of_gen/combined-nonneutral-se.png">
 Degree of Generalization with latent distance on Distance of lander to landing pad (Left) and Orientation of key (Right), averaged over 5 random seeds, and evaluated over 100 episodes.
 </p>
 
