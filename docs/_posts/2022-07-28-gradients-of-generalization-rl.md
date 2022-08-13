@@ -162,4 +162,4 @@ If you use this post in your research, please consider citing as follows:
 
 [[31] Volodymyr Mnih et al. Human-level control through deep reinforcement learning.](https://www.nature.com/articles/nature14236)
 
-[[32] F. Pedregosa et al. Scikit-learn: Machine Learning in {P}ython}](https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html)
+[[32] F. Pedregosa et al. Scikit-learn: Machine Learning in Python](https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html)
