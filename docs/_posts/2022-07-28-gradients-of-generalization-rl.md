@@ -34,7 +34,7 @@ Previous attempts at measuring "gradients of generalization" used physical measu
 
 ### Mathematical formulation
 
-Shepard proposed the following method to uncover the universal law: For generalization data G, on a set of stimuli *S* (s+ as the original trained stimuli, and s- as any other test stimuli), and a distance metric *d*, we want to recover a function *f* as,
+Shepard proposed the following method to uncover the universal law: For generalization data G, that is first normalized by *g_ij* = *[(p_ij . p_ji) / (p_ii . p_jj)]^(1/2)* (where *p_ij* is the probability of generalization on stimulus *j*, when trained on stimulus *i*), on a set of stimuli *S* (s+ as the original trained stimuli, and s- as any other test stimuli), and a distance metric *d*, we want to recover a function *f* as,
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/theory_of_gen/formula.png" width=360>
