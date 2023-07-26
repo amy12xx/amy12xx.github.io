@@ -41,11 +41,11 @@ Intuitively, it’s easy to see how descriptive and creative tasks such as *“C
 We look at the task of news summarization, where, one would expect a preference of concise outputs over more verbose ones. However, on the news summarization dataset, we find that the same pattern as above holds, with longer “overall” summaries being preferred over shorter ones (Human eval - 60.76%), even when the task is to prefer an “overall better summary” (i.e. when not judging for “a more informative summary”).
 
 <p align="center" style="font-size:8px;">
-<img src="https://amy12xx.github.io/img/verbosity_bias/summ_percent.png" width=360>
+<img src="https://amy12xx.github.io/img/verbosity_bias/summ_percent.png" width=340>
 </p>
 
 <p align="center" style="font-size:8px;">
-<img src="https://amy12xx.github.io/img/verbosity_bias/summ_mean_token_len.png" width=360>
+<img src="https://amy12xx.github.io/img/verbosity_bias/summ_mean_token_len.png" width=340>
 </p>
 
 ### Discussion and Conclusion
