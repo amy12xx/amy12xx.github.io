@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Examining Gradients of Generalization in RL"
+title:  "Comparing verbosity bias in Human and LLM based evaluators"
 date:   2023-07-26 12:32:00 -0700
 categories: Large Language Models, Evaluation, Bias
 permalink: verbosity-bias-llms.html
