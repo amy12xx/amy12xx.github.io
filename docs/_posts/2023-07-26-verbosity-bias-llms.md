@@ -9,7 +9,7 @@ permalink: verbosity-bias-llms.html
 
 Much has been reported recently about biases in LLM based evaluators - for instance, LLM’s have been reported to exhibit position bias favoring options in earlier positions over others [[1]](#references) [[2]](#references) [[3]](#references), verbosity bias favoring more verbose outputs [[4]](#references), diversity bias favoring outputs using higher number of distinct tokens, and bias towards LLM-based outputs [[5]](#references). These have often been used as a critique of such approaches. In addition, the most common method of validating automated metrics is their correlation with human judgement. It’s worthwhile, then, to ask the question: Do humans suffer from the same biases?
 
-In this micro-post, I dig into the verbosity bias on two benchmarks: The first, a task of miscellaneous prompts from the MT-bench [[4]](#references) dataset. MT-bench contains 3.3K pairwise human preferences on model outputs from 6 strongly performing large language models - GPT-4, GPT-3.5, Claud-v1, Vicuna-13B, Alpaca-13B, and LLaMA-13B, which have been annotated for preference by graduate students with expertise on 8 topics (writing, roleplay, extraction, reasoning, math, coding, STEM, humanities/social science). A second, a news summarization benchmark, using a dataset of preferences over LLM generated summaries and high-quality summaries for news articles written by freelance writers [[6]](#references). A reasonable hypothesis is that while humans (and LLMs) might lean towards verbosity in descriptive tasks, brevity is a reasonable preference on a summarization task.
+In this micro-post, I dig into the verbosity bias on three benchmarks: The first, a task of miscellaneous prompts from the MT-bench [[4]](#references) dataset. MT-bench contains 3.3K pairwise human preferences on model outputs from 6 strongly performing large language models - GPT-4, GPT-3.5, Claud-v1, Vicuna-13B, Alpaca-13B, and LLaMA-13B, which have been annotated for preference by graduate students with expertise on 8 topics (writing, roleplay, extraction, reasoning, math, coding, STEM, humanities/social science). A second similar task of miscellaneous prompts using the Vicuna benchmark [[7]](#references) on competing models - Bard, Guanaco-7/13/33/65b, Vicuna-13b, GPT-3.5, GPT-4, and annotated for pairwise comparisons by Amazon Mechanical Turk workers. Finally, a news summarization task/benchmark, using a dataset of preferences over LLM generated summaries and high-quality summaries for news articles written by freelance writers [[6]](#references). A reasonable hypothesis is that while humans (and LLMs) might lean towards verbosity in descriptive tasks, brevity is a reasonable preference of a summarization task.
 
 ### Experiments exploring verbosity bias in human and LLM evals
 
@@ -25,10 +25,20 @@ We compare the model generated outputs in MT-bench evaluated by human experts an
 <img src="https://amy12xx.github.io/img/verbosity_bias/human-gpt4-eval.png" width=360>
 </p>
 
+Similarly, on the Vicuna benchmark, 68.82% of the time, annotators preferred outputs with longer generations, between competing models (controlled for position bias).
+
+<p align="center" style="font-size:8px;">
+<img src="https://amy12xx.github.io/img/verbosity_bias/vicuna.png" width=360>
+</p>
+
 Between outputs that were marked as ties (between the two competing models), and those that were not ties (strict preference of one or the other model), I found that ties had a lower average token length difference between the model outputs, but that this behavior was similar to both human and LLM evaluations. 
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/verbosity_bias/mean token len.png" width=360>
+</p>
+
+<p align="center" style="font-size:8px;">
+<img src="https://amy12xx.github.io/img/verbosity_bias/vicuna mean token len.png" width=360>
 </p>
 
 When I described verbosity bias above, I left out some parts that are used in its definition in the MT-bench paper - *“even if they are not as clear, high-quality, or accurate”,* mainly because I think the inductive bias towards longer outputs itself may exist without this distinction, and more importantly, because I do not think there have been sufficient studies to show that this is the case.
@@ -51,7 +61,7 @@ We look at the task of news summarization, where, one would expect a preference 
 
 ### Discussion and Conclusion
 
-If such known biases exist in human evaluations, it begs the question if the underlying task creation needs to be adjusted to first debias it. For instance, on both the general and summarization tasks, could they have included specific instructions that guide the annotators against these known biases, or if the outputs were first normalized or bounded for length. 
+If such known biases exist in human evaluations, it begs the question if the underlying task creation needs to be adjusted to first debias it. For instance, on both the general and summarization tasks, could they have included specific instructions that guide the annotators against these known biases, or if the outputs were first controlled for length. 
 
 Human evaluations have been used as the gold standard on most NLP tasks, including recent benchmarks on LLMs. They have additionally been used in the creation of new metrics (including metrics using LLMs (a.k.a GPT-scorers), where a high correlation of a metric with human judgement is used to validate its reliability as a metric. 
 
@@ -79,3 +89,5 @@ If you use this post in your research, please consider citing as follows:
 [5] Yang Liu, Dan Iter, Yichong Xu, Shuohang Wang, Ruochen Xu and Chenguang Zhu. G-EVAL: NLG Evaluation using GPT-4 with Better Human Alignment. arXiv preprint arXiv:2303.16634, 2023.
 
 [6] Tianyi Zhang, Faisal Ladhak, Esin Durmus, Percy Liang, Kathleen McKeown and Tatsunori B. Hashimoto. Benchmarking Large Language Models for News Summarization. arXiv preprint arXiv:2301.13848, 2023.
+
+[7] Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer. QLoRA: Efficient Finetuning of Quantized LLMs. arXiv preprint arXiv:2305.14314. 2023.
