@@ -25,7 +25,7 @@ We compare the model generated outputs in MT-bench evaluated by human experts an
 <img src="https://amy12xx.github.io/img/verbosity_bias/human-gpt4-eval.png" width=360>
 </p>
 
-Similarly, on the Vicuna benchmark, 68.82% of the time, annotators preferred outputs with longer generations, between competing models (controlled for position bias). The bias is much lower on AlpacaEval, where the authors have noted such human biases, and appear to therefore more consciously address for these. This can been observed in the prompt instructions, where some specifically instruct for brevity; for instance "The sentence you are given might be too wordy, complicated, or unclear. Rewrite the sentence and make your writing clearer by keeping it concise...and eliminate unnecessary words..."
+Similarly, on the Vicuna benchmark, 68.82% of the time, annotators preferred outputs with longer generations, between competing models (controlled for position bias). The bias is much lower on AlpacaEval, where the authors have noted such human biases, and appear to therefore more consciously address for these. This can been observed in the prompt instructions, where some specifically instruct for brevity; for instance *"The sentence you are given might be too wordy, complicated, or unclear. Rewrite the sentence and make your writing clearer by keeping it concise...and eliminate unnecessary words..."*
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/verbosity_bias/vicuna_alpaca.png" width=360>
