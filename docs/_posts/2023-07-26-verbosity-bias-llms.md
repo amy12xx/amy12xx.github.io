@@ -9,7 +9,7 @@ permalink: verbosity-bias-llms.html
 
 Much has been reported recently about biases in LLM based evaluators - for instance, LLM’s have been reported to exhibit position bias favoring options in earlier positions over others [[1]](#references) [[2]](#references) [[3]](#references), verbosity bias favoring more verbose outputs [[4]](#references), diversity bias favoring outputs using higher number of distinct tokens, and bias towards LLM-based outputs [[5]](#references). These have often been used as a critique of such approaches. In addition, the most common method of validating automated metrics is their correlation with human judgement. It’s worthwhile, then, to ask the question: Do humans suffer from the same biases?
 
-In this micro-post, I dig into the verbosity bias on three benchmarks: The first, a task of miscellaneous prompts from the *MT-bench* [[4]](#references) dataset. MT-bench contains 3.3K pairwise human preferences on model outputs from 6 strongly performing large language models - GPT-4, GPT-3.5, Claud-v1, Vicuna-13B, Alpaca-13B, and LLaMA-13B, which have been annotated for preference by graduate students with expertise on 8 topics (writing, roleplay, extraction, reasoning, math, coding, STEM, humanities/social science). A second similar task of miscellaneous prompts using the *Vicuna benchmark* [[7]](#references) on competing models - Bard, Guanaco-7/13/33/65b, Vicuna-13b, GPT-3.5, GPT-4, and annotated for pairwise comparisons by Amazon Mechanical Turk workers. Finally, a *news summarization task/benchmark*, using a dataset of preferences over LLM generated summaries and high-quality summaries for news articles written by freelance writers [[6]](#references). A reasonable hypothesis is that while humans (and LLMs) might lean towards verbosity in descriptive tasks, brevity is a reasonable preference of a summarization task.
+In this micro-post, I dig into the verbosity bias on four popular benchmarks: The first, a task of miscellaneous prompts from the *MT-bench* [[4]](#references) dataset. MT-bench contains 3.3K pairwise human preferences on model outputs from 6 strongly performing large language models - GPT-4, GPT-3.5, Claud-v1, Vicuna-13B, Alpaca-13B, and LLaMA-13B, which have been annotated for preference by graduate students with expertise on 8 topics (writing, roleplay, extraction, reasoning, math, coding, STEM, humanities/social science). A second similar task of miscellaneous prompts using the *Vicuna benchmark* [[7]](#references) on competing models - Bard, Guanaco-7/13/33/65b, Vicuna-13b, GPT-3.5, GPT-4, and annotated for pairwise comparisons by Amazon Mechanical Turk workers. In a similar vein, human annotations on *AlpacaEval* prompts (~650 instructions each with 4 human annotations) on the GPT-4, Claude, Text-Davinci-003, ChatGPT-Functions, Guanaco-33b, and Chat-GPT models [[8]](#references) [[9]](#references). Finally, a *news summarization task/benchmark*, using a dataset of preferences over LLM generated summaries and high-quality summaries for news articles written by freelance writers [[6]](#references). A reasonable hypothesis is that while humans (and LLMs) might lean towards verbosity in descriptive tasks, brevity is a reasonable preference of a summarization task.
 
 ### Experiments exploring verbosity bias in human and LLM evals
 
@@ -25,13 +25,15 @@ We compare the model generated outputs in MT-bench evaluated by human experts an
 <img src="https://amy12xx.github.io/img/verbosity_bias/human-gpt4-eval.png" width=360>
 </p>
 
-Similarly, on the Vicuna benchmark, 68.82% of the time, annotators preferred outputs with longer generations, between competing models (controlled for position bias).
+Similarly, on the Vicuna benchmark, 68.82% of the time, annotators preferred outputs with longer generations, between competing models (controlled for position bias). The bias is much lower on AlpacaEval, where the authors have noted such human biases, and appear to therefore more consciously address for these. This can been observed in the prompt instructions, where some specifically instruct for brevity; for instance "The sentence you are given might be too wordy, complicated, or unclear. Rewrite the sentence and make your writing clearer by keeping it concise...and eliminate unnecessary words..."
 
 <p align="center" style="font-size:8px;">
-<img src="https://amy12xx.github.io/img/verbosity_bias/vicuna.png" width=360>
+<img src="https://amy12xx.github.io/img/verbosity_bias/vicuna_alpaca.png" width=360>
 </p>
 
 Between outputs that were marked as ties (between the two competing models), and those that were not ties (strict preference of one or the other model), I found that ties had a lower average token length difference between the model outputs, but that this behavior was similar to both human and LLM evaluations. 
+
+(*AlpacaEval human annotations do not contain any instances of ties*)
 
 <p align="center" style="font-size:8px;">
 <img src="https://amy12xx.github.io/img/verbosity_bias/mean token len.png" width=360>
@@ -91,3 +93,7 @@ If you use this post in your research, please consider citing as follows:
 [6] Tianyi Zhang, Faisal Ladhak, Esin Durmus, Percy Liang, Kathleen McKeown and Tatsunori B. Hashimoto. Benchmarking Large Language Models for News Summarization. arXiv preprint arXiv:2301.13848, 2023.
 
 [7] Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer. QLoRA: Efficient Finetuning of Quantized LLMs. arXiv preprint arXiv:2305.14314. 2023.
+
+[8] Xuechen Li, Tianyi Zhang, Yann Dubois, Rohan Taori, Ishaan Gulrajani, Carlos Guestrin, Percy Liang and Tatsunori B. Hashimoto. AlpacaEval: An Automatic Evaluator of Instruction-following Models. https://github.com/tatsu-lab/alpaca_eval. 2023.
+
+[9] Yann Dubois, Xuechen Li, Rohan Taori, Tianyi Zhang, Ishaan Gulrajani, Jimmy Ba, Carlos Guestrin, Percy Liang, Tatsunori B. Hashimoto. AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback. arXiv preprint arXiv:2305.14387. 2023.
